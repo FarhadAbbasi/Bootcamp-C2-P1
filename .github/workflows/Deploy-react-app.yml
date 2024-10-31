@@ -18,7 +18,7 @@ jobs:
     - name: Install Yarn
       uses: borales/actions-yarn@v2.0.0 
       with:
-       cmd: install --ignore-engines # will run "yarn install" command
+       cmd: install --force --ignore-engines # will run "yarn install" command
 
     - name: Build react app
       run: yarn build
