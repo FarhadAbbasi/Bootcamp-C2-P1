@@ -16,9 +16,9 @@ jobs:
        node-version: 18.0.0
 
     - name: Install Yarn
-      uses: borales/actions-yarn@v2.0.0
+      uses: borales/actions-yarn@v2.0.0 
       with:
-       cmd: install # will run "yarn install" command
+       cmd: install --ignore-engines # will run "yarn install" command
 
     - name: Build react app
       run: yarn build
